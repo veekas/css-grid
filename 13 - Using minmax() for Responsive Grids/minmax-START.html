@@ -21,7 +21,18 @@
       display: grid;
       grid-gap: 20px;
       border: 10px solid var(--yellow);
-      grid-template-columns: repeat(auto-fit, 150px);
+
+      /* doesn't stretch contents out to fit screen */
+      /* grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); */
+
+      /* fits the screen width really nicely */
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+      /* fit-content is cool, but I need more examples */
+      /* grid-template-columns: fit-content(100px) 150px 150px 150px; */
+
+      /* can't figure out how to get fit-content to work with repeat */
+      /* grid-template-columns: repeat(auto-fit, fit-content(150px)); */
     }
   </style>
 </body>
