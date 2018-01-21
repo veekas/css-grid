@@ -46,6 +46,27 @@
     .container {
       display: grid;
       grid-gap: 20px;
+      /* grid-template-areas:
+        "l1 m1 r1"
+        "l2 m2 r2"
+        "l3 m3 r3"
+        "l4 m4 r4" */
+      grid-template-areas:
+        "p p p q q q"
+        "p p p q q q"
+        "p p p q q q"
+        "p p p q q q"
+    }
+
+    .item1 {
+      grid-column: p-start / p-end;
+      /* same as... */
+      grid-column: p-start / q-start;
+    }
+
+    .item2 {
+      grid-column: q-start / q-end;
+      grid-row: q-start / q-end;
     }
   </style>
 </body>

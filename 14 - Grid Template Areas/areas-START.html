@@ -15,11 +15,16 @@
     </div>
     <div class="item item2">
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sed.</p>
-      <p>Lorem ipsum d</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sed.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sed.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sed.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sed.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sed.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sed.</p>
     </div>
-    <div class="item item3">
+    <!-- <div class="item item3">
       <p>I'm Sidebar #2</p>
-    </div>
+    </div> -->
     <div class="item footer">
       <p>I'm the footer</p>
     </div>
@@ -29,6 +34,23 @@
     .container {
       display: grid;
       grid-gap: 20px;
+      grid-template-columns: minmax(150px) auto minmax(150px, 1fr);
+      grid-template-rows: auto 200px;
+      grid-template-areas:
+        "sidebar-1 content" /* sidebar-2 */
+        "footer footer" /* footer */
+    }
+
+    .footer {
+      grid-area: footer;
+    }
+
+    .sidebar-1 {
+      grid-area: sidebar-1;
+    }
+
+    .sidebar-2 {
+      grid-area: sidebar-2;
     }
   </style>
 </body>
