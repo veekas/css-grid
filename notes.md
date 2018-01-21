@@ -11,6 +11,7 @@
 - *`fr`*: fractional units, which represent all the space left after the items are laid out
 - `justify-*`: row axis
 - `align-*`: column axis
+- not sure i see the value of the `order` prop
 
 ## responsive/mobile
 - potentially can replace media queries, woo!
